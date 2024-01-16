@@ -21,6 +21,7 @@ defmodule LiveViewNativeTest.Endpoint do
   def config(:pubsub_server), do: Phoenix.LiveView.PubSub
   def config(:render_errors), do: [view: __MODULE__, accepts: @formats]
   def config(:static_url), do: [path: "/static"]
+  def config(:live_reload), do: [patterns: [~r//]]
 
   def config(which), do: super(which)
   def config(which, default), do: super(which, default)

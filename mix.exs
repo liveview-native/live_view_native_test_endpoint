@@ -1,10 +1,12 @@
 defmodule LiveViewNativeTest.MixProject do
   use Mix.Project
 
+  @version "0.3.0-alpha.1"
+
   def project do
     [
       app: :live_view_native_test,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps()
@@ -22,9 +24,8 @@ defmodule LiveViewNativeTest.MixProject do
   defp deps do
     [
       {:phoenix, "> 1.7.0"},
-      {:phoenix_live_view, ">= 0.20.3"}
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      # {:phoenix_live_view, path: "../phoenix_live_view", override: true},
+      {:phoenix_live_view, github: "phoenixframework/phoenix_live_view", ref: "476d1cd288474d7acb33424a74b304b4e9495ff1", override: true},
     ]
   end
 end
