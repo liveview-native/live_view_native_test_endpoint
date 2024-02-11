@@ -6,9 +6,8 @@ defmodule LiveViewNativeTest.Endpoint do
 
   socket "/live", Phoenix.LiveView.Socket
   @parsers Plug.Parsers.init(
-    parsers: [:urlencoded, :multipart, :json],
-    pass: ["*/*"],
-    json_decoder: Phoenix.json_library()
+    parsers: [:urlencoded, :multipart],
+    pass: ["*/*"]
   )
   defoverridable url: 0, script_name: 0, config: 1, config: 2, static_path: 1
   def url(), do: "http://localhost:4000"
