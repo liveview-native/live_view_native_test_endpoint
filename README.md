@@ -1,6 +1,6 @@
-# LiveViewNativeTest
+# LiveViewNative.Test
 
-**TODO: Add description**
+Support library for writing LiveViewNative client test suites
 
 ## Installation
 
