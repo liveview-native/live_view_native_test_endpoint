@@ -1,10 +1,4 @@
 defmodule LiveViewNativeTest do
-  @moduledoc """
-  """
-
-  @doc """
-
-  """
   defmacro native(conn, path, format, interface \\ {:%{}, [], []}) do
     quote do
       unquote(conn)
