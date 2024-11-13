@@ -1,11 +1,11 @@
 defmodule LiveViewNativeTest.MixProject do
   use Mix.Project
 
-  @version "0.3.0"
+  @version "0.4.0"
 
   def project do
     [
-      app: :live_view_native_test,
+      app: :live_view_native_test_endpoint,
       version: @version,
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
