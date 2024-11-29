@@ -14,7 +14,7 @@ defmodule LiveViewNativeTest.Router do
 
   pipeline :browser do
     formats =
-      Application.compile_env!(:live_view_native_test, :formats)
+      Application.compile_env!(:live_view_native_test_endpoint, :formats)
       |> Enum.map(&Atom.to_string(&1))
 
     plug :setup_session
@@ -26,7 +26,7 @@ defmodule LiveViewNativeTest.Router do
   scope "/" do
     pipe_through [:browser]
 
-    routes = Application.compile_env!(:live_view_native_test, :routes)
+    routes = Application.compile_env!(:live_view_native_test_endpoint, :routes)
 
     for route <- routes do
       live route.path, route.module

@@ -1,6 +1,6 @@
 defmodule LiveViewNativeTest.Endpoint do
-  @otp_app Application.compile_env!(:live_view_native_test, :otp_app)
-  @formats Application.compile_env!(:live_view_native_test, :formats)
+  @otp_app Application.compile_env!(:live_view_native_test_endpoint, :otp_app)
+  @formats Application.compile_env!(:live_view_native_test_endpoint, :formats)
 
   use Phoenix.Endpoint, otp_app: @otp_app
 
