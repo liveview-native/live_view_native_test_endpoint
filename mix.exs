@@ -24,7 +24,7 @@ defmodule LiveViewNativeTest.MixProject do
   defp deps do
     [
       {:phoenix, "> 1.7.0"},
-      {:phoenix_live_view, "~> 1.0.0-rc.8"},
+      {:phoenix_live_view, "~> 1.1"},
     ]
   end
 end
